@@ -1,33 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Simple website</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <table>
-        <tr>
-            <th>Roll No.</th>
-            <th>Student name</th>
-            <th>Marks</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Sanskriti Rijal</td>
-            <td>100</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Ram Poudel</td>
-            <td>97</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Sarita Gurung</td>
-            <td>92</td>
-        </tr>
-    </table>
-</body>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>A sample website</title>
+        <link rel="stylesheet" href="style.css"> 
+    </head>
+    <body>
+        <h1>Student Registration Form</h1>
+        <form>
+            <label>Full name:</label>
+            <input type="text" placeholder="Your full name">
+            <br> <br>
+            <label>Email address:</label>
+            <input type="email" placeholder="Your email">
+            <br> <br>
+            <label for="password">Age:</label>
+            <input type="password" placeholder="Age">
+            <br> <br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date">
+            <br> <br>
+            <label>Gender:</label>
+            <br>
+            <input type="radio" name="Gender" value="Male"/>Male
+            <br>
+            <input type="radio" name="Gender" value="Female"/>Female
+            <br> <br>
+            <label for="course">Select Courses:</label>
+            <select>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">Javascript</option>
+            </select>
+            <br> <br>
+            <label for="hobbies">Choose your hobbies:</label> 
+            <br>
+            <input type="checkbox" name="Reading" value="Reading"/>Reading
+            <br>
+            <input type="checkbox" name="Writing" value="Writing"/>Writing
+            <br>
+            <input type="checkbox" name="Coding" value="Coding"/>Coding
+            <br> <br>
+        </form>
+        <button>Submit</button>
+    </body>
 </html>
